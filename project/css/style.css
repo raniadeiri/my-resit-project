@@ -1,0 +1,759 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#banner {
+  background: linear-gradient(
+      to bottom,
+      rgba(252, 248, 245, 0.15),
+      rgba(16, 37, 12, 0.73)
+    ),
+    url(photos/amoon-ra-n8vDuIpGb0c-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.logo {
+  width: 100px;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
+
+.banner-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 180px;
+}
+
+.banner-text h1 {
+  font-size: 80px;
+  font-family: "Kaushan Script";
+}
+
+.banner-text p {
+  font-size: 24px;
+  padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+}
+
+.recips {
+  margin: 76px auto;
+}
+
+.banner-btn a {
+  width: 180px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  text-align: center;
+  color: #fff;
+  border: 1.5px solid rgb(5, 71, 28);
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+}
+
+.banner-btn a b {
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+}
+
+.banner-btn a span {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(236, 232, 221);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+  width: 100%;
+}
+
+.banner-btn a:hover {
+  color: #000;
+}
+
+#sideNav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #009688;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 50px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+}
+
+#menuBtn {
+  width: 50px;
+  height: 50px;
+  background: #009688;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#menuBtn img {
+  width: 20px;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 770px) {
+  .banner-text h1 {
+    font-size: 44px;
+  }
+  .banner-btn a {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+/* /--about-us--/  */
+
+#about-us {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.title-text {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.title-text h1 {
+  font-family: "Kaushan Script";
+  font-size: 60px;
+}
+
+.title-text h1 b {
+  font-size: 40px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.title-text p {
+  margin: 20px;
+  font-size: 30px;
+  color: #97bf11;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-family: "Archivo", sans-serif;
+}
+
+.about-us-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.about-us {
+  flex-basis: 50%;
+}
+
+.about-us-img {
+  flex-basis: 50%;
+  margin: auto;
+}
+
+.about-us-img img {
+  width: 70%;
+  border-radius: 10px;
+  margin: right;
+}
+
+.about-us h1 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #97bf11;
+}
+.about-us h1 b {
+  font-family: "Kalam", cursive;
+  font-size: 40px;
+}
+
+.about-us-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-us-icon .bx {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 8px;
+  color: #97bf11;
+  border: 1px solid #97bf11;
+}
+
+.about-us-text {
+  padding: 0 20px;
+  text-align: initial;
+}
+.about-us-text .banner-text {
+  color: black;
+}
+
+@media screen and (max-width: 770px) {
+  .title-text h1 {
+    font-size: 35px;
+  }
+  .about-us {
+    flex-basis: 100%;
+  }
+  .about-us-img {
+    flex-basis: 100%;
+  }
+  .about-us-img img {
+    width: 100%;
+  }
+}
+
+/* /--recipss--/ */
+
+#recips {
+  width: 100%;
+  padding: 70px 0;
+  background: #efefef;
+}
+
+.sevice-box {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.single-recips {
+  flex-basis: 48%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: rgb(229, 241, 229);
+  position: relative;
+}
+
+.single-recips img {
+  width: 100%;
+  border-radius: 7px;
+  margin: flex;
+}
+.more {
+  color: #a56000;
+  border-radius: 1px black;
+  text-align: center;
+}
+.banner-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 180px;
+}
+
+/* .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+} */
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img-box img {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 300px;
+  height: auto;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #cb7411);
+  opacity: 0;
+  transition: 1s;
+}
+
+.single-recips:hover .overlay {
+  opacity: 1;
+}
+
+.recips-desc {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  opacity: 1s;
+  transform: translate(-50%);
+  transition: 1s;
+}
+
+.hr {
+  background: rgb(79, 12, 12);
+  height: 2px;
+  border: 0;
+  margin: 15px auto;
+  width: 60%;
+}
+
+.recips-desc p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #000;
+  font-family: "Urbanist", sans-serif;
+}
+
+.single-recips:hover .recips-desc {
+  bottom: 40%;
+  opacity: 1s;
+}
+
+@media screen and (max-width: 770px) {
+  .sevice-box {
+    width: 100%;
+  }
+  .single-recips {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .recips-desc {
+    font-size: 12px;
+  }
+  hr {
+    margin: 5px auto;
+  }
+  .single-recips:hover .recips-desc {
+    bottom: 25% !important;
+  }
+  .img-box img {
+    margin-bottom: 20px;
+    width: 300px;
+    height: auto;
+  }
+}
+
+#testimonial {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.testimonial-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.testimonial-col {
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 3px #00968814;
+}
+
+.testimonial-col {
+  font-size: 14px;
+}
+
+/*--footer--*/
+
+#footer {
+  padding: 100px 0 20px;
+  background: #efefef;
+  position: relative;
+}
+
+.footer-row {
+  display: flex;
+}
+
+.footer-left,
+.footer-right {
+  flex-basis: 45%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-right {
+  text-align: right;
+}
+.footer-left {
+  text-align: left;
+  margin-left: 100px;
+}
+.footer-left p {
+  color: rgb(1, 78, 67);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.footer-row h1 {
+  margin: 10px 0;
+}
+
+.footer-row p {
+  line-height: 35px;
+}
+
+.footer-left .fa,
+.footer-right .fa {
+  font-size: 20px;
+  color: #2a3703;
+  margin: 10px;
+}
+
+.footer-img {
+  max-width: 370px;
+  opacity: 0.2;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links .fa {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid #009688;
+  margin: 40px 5px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.social-links .fa:hover {
+  background: #009688;
+  color: #fff;
+  transform: translateY(-7px);
+}
+.copyright p {
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+}
+
+@media screen and (max-width: 770px) {
+  .footer-row {
+    flex-direction: column;
+  }
+  .footer-left,
+  .footer-right {
+    flex-basis: 100%;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .footer-right {
+    text-align: left;
+  }
+  .about-us-img {
+    top: 25px;
+  }
+}
+
+/* ........./ Testimonial /.......... */
+
+#weekly-news {
+  padding: 5rem 0;
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.testimonial-container {
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.testimonial-box .checked {
+  color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+  margin: 1rem 0;
+  color: #444;
+  font-family: "Urbanist", sans-serif;
+}
+
+.testimonial-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+.customer-name {
+  font-family: "Kalam", cursive;
+}
+
+@media (max-width: 500px) {
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ........./ API /.......... */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ebebeb;
+  font-family: "Poppins", sans-serif;
+}
+
+.name {
+  color: brown;
+  font-size: 22px;
+  position: absolute;
+}
+
+.card {
+  margin-left: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  max-width: 200px;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+.card img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.success {
+  border: 1px solid green;
+  padding: 1rem;
+  color: green;
+  background: rgba(0, 255, 0, 0.1);
+}
+#api-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card h1 {
+  font-size: large;
+  color: #2a3703;
+  text-align: center;
+  padding: 2px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+.title {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 300px;
+  font-family: "Kaushan Script", sans-serif;
+  color: white;
+}
+.card h4 {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 3px;
+  font-family: "Kaushan Script", sans-serif;
+  color: rgb(13, 2, 2);
+}
+.contact-us {
+  font-family: "Poppins", sans-serif;
+  color: #485d0b;
+}
+.api-title {
+  font-family: "Kaushan Script";
+}
+/* sign up */
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #d6b489;
+  border-radius: 24px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-family: "Kalam", cursive;
+}
+
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #0b0d0f;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #024917;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 8px solid #053a15;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #054317;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 488px;
+  }
+}
+
+.wrapper .btn input[type="submit"] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: #054317;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#error_message {
+  margin-bottom: 20px;
+  background: #903e04;
+  color: floralwhite;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  max-width: 350px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-contact-us {
+  font-family: "Kalam", cursive;
+  font-size: 40px;
+}
